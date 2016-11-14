@@ -11,7 +11,7 @@ namespace Task2.Tests
     public class SquareTests
     {
         [TestCase(1, ExpectedResult = 4)]
-        [TestCase(4.5, ExpectedResult = 18)]
+        [TestCase(2, ExpectedResult = 8)]
         [TestCase(3, ExpectedResult = 12)]
         public double PerimetrTests(double a)
         {
@@ -20,8 +20,8 @@ namespace Task2.Tests
             return square.Perimeter();
         }
 
+        [TestCase(1, ExpectedResult = 1)]
         [TestCase(2, ExpectedResult = 4)]
-        [TestCase(4.5, ExpectedResult = 20.25)]
         [TestCase(3, ExpectedResult = 9)]
         public double AreaTests(double a)
         {
