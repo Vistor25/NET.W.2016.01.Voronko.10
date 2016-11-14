@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task2
 {
-    class Rectangle : IPerimeter, IArea
+    public class Rectangle : IPerimeter, IArea
     {
         public double Aside { get; }
         public double Bside { get; }
