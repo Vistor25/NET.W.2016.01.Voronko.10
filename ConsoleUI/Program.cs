@@ -12,8 +12,10 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             Timer timer = new Timer(4);
-            var obj = new Class1();
-            timer.CountDownfinished += obj.Write;
+            var obj1 = new Class1();
+            var obj2 = new Class2();
+            timer.CountDownfinished += obj1.Write;
+            timer.CountDownfinished += obj2.Write;
             timer.Start();
         }
     }
